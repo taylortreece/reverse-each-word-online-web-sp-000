@@ -1,3 +1,7 @@
 def reverse_each_word(word)
-  puts word.reverse
+  array = word.to_a
+  array.collect do |word| 
+    word.reverse
+  end
+  puts array.join
 end
